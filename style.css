@@ -40,3 +40,10 @@ ul{
 li{
     margin:8px 0;
 }
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
