@@ -33,3 +33,10 @@ button{
     color:white;
     cursor:pointer;
 }
+ul{
+    margin-top:20px;
+}
+
+li{
+    margin:8px 0;
+}
