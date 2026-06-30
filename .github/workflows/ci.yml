@@ -1,0 +1,27 @@
+name: CI - Dev Company
+
+on:
+  push:
+    branches:
+      - main
+      - feature
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verificar-projeto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos do projeto
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          test -f README.md
+          echo "Estrutura do projeto verificada com sucesso!"
